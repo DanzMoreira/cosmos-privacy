@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — Cosmos</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b0d12;
+      --card: #151922;
+      --text: #e8eaed;
+      --muted: #9aa0a6;
+      --accent: #7eb8ff;
+      --border: #2a3140;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f8fa;
+        --card: #ffffff;
+        --text: #1a1d24;
+        --muted: #5f6368;
+        --accent: #1a73e8;
+        --border: #dadce0;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin: 0 0 12px;
+    }
+
+    p, li {
+      margin: 0 0 10px;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin: 0 0 10px;
+      padding-left: 1.25rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Política de Privacidade</h1>
+      <p class="subtitle">Cosmos – Astronomy Daily · Última atualização: 24 de julho de 2026</p>
+    </header>
+
+    <section>
+      <h2>1. Sobre este aplicativo</h2>
+      <p>
+        O <strong>Cosmos – Astronomy Daily</strong> (“Cosmos”) exibe imagens e textos
+        astronômicos públicos, principalmente da NASA (APOD e NASA Image and Video Library).
+        O aplicativo não exige cadastro, login ou criação de conta.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Dados que coletamos</h2>
+      <p>
+        O Cosmos <strong>não coleta dados pessoais identificáveis</strong> (como nome,
+        e-mail, telefone ou endereço) para fins de marketing, publicidade ou perfil de usuário.
+      </p>
+      <p>O aplicativo pode processar as informações abaixo apenas para funcionar:</p>
+      <ul>
+        <li><strong>Idioma do dispositivo</strong> — para decidir se textos devem ser exibidos em português.</li>
+        <li><strong>Cache local no aparelho</strong> — datas consultadas, traduções e listas de imagens, para carregar mais rápido e funcionar offline parcialmente.</li>
+        <li><strong>Permissão de notificações (opcional)</strong> — se você autorizar, o app pode avisar quando houver uma nova imagem astronômica do dia (APOD).</li>
+        <li><strong>Consultas a serviços externos</strong> — o app busca conteúdo público da NASA e traduções armazenadas em nossa base de dados.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Serviços de terceiros</h2>
+      <p>Para exibir conteúdo e traduções, o Cosmos utiliza:</p>
+      <ul>
+        <li><strong>NASA Open APIs</strong> — imagens, títulos, descrições e metadados públicos.</li>
+        <li><strong>Supabase</strong> — leitura de traduções em português previamente geradas. O app não envia dados pessoais do usuário ao Supabase.</li>
+        <li><strong>Função de tradução (Edge Function)</strong> — quando uma tradução ainda não existe, o app pode enviar identificadores e textos públicos de imagens da NASA para gerar e salvar a tradução. Nenhum dado pessoal do usuário é incluído nesse processo.</li>
+        <li><strong>Google Translate (via serviço de tradução)</strong> — usado apenas no servidor para traduzir textos públicos da NASA para português.</li>
+      </ul>
+      <p>
+        Cada serviço possui sua própria política de privacidade. Recomendamos consultar
+        a documentação oficial da NASA, do Supabase e do Google quando aplicável.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. O que não fazemos</h2>
+      <ul>
+        <li>Não vendemos dados.</li>
+        <li>Não exibimos anúncios comportamentais.</li>
+        <li>Não utilizamos ferramentas de analytics ou rastreamento de publicidade no aplicativo.</li>
+        <li>Não solicitamos informações de pagamento dentro do app.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Notificações e execução em segundo plano</h2>
+      <p>
+        Se você permitir notificações, o Cosmos pode verificar periodicamente se há
+        uma nova imagem APOD e enviar um aviso local no seu dispositivo. Você pode
+        desativar notificações a qualquer momento nas configurações do sistema operacional.
+      </p>
+      <p>
+        O app também pode usar sincronização em segundo plano para checar novidades,
+        sem enviar dados pessoais a servidores externos além das consultas descritas acima.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Retenção e exclusão</h2>
+      <p>
+        Dados em cache ficam armazenados apenas no seu dispositivo e podem ser removidos
+        desinstalando o aplicativo ou limpando os dados do app nas configurações do sistema.
+      </p>
+      <p>
+        Traduções de conteúdo público da NASA ficam em nossa base de dados para benefício
+        de todos os usuários e não estão vinculadas a indivíduos.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Crianças</h2>
+      <p>
+        O Cosmos exibe conteúdo educativo e científico de fontes públicas. Não coletamos
+        intencionalmente dados pessoais de crianças.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Alterações nesta política</h2>
+      <p>
+        Podemos atualizar esta política quando o aplicativo ou seus serviços mudarem.
+        A data da última revisão aparece no topo desta página.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Contato</h2>
+      <p>
+        Dúvidas sobre privacidade podem ser enviadas pelo repositório do projeto no GitHub:
+        <a href="https://github.com/DanzMoreira/APP_NASA/issues">github.com/DanzMoreira/APP_NASA/issues</a>
+      </p>
+    </section>
+
+    <footer>
+      Cosmos – Astronomy Daily · com.cosmos.astronomydaily
+    </footer>
+  </main>
+</body>
+</html>
